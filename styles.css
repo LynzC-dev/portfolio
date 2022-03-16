@@ -1,142 +1,4 @@
 
-
-/* h1 {  
-    color: red;  
-    line-height: 1.2rem;
-    text-align: center
-}
-
-
-h2 {
-    color:aqua;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: bottom;
-    font-size: 30px;
-}
-
-h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a:visited {
-    color:maroon;
-}
-
-a {
-    text-decoration: none;
-}
-.highlight {
-    background-color:blueviolet;
-    border:20px solid rgb(8, 54, 23);
-    border-radius: 10px;
-    height: 50px;
-    width: 600px;
-
-}
-
-#qualities {
-    font-size: 20px;
-    color: blue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-transform: capitalize;
-    border: grey 5px solid;
-    border-radius: 10px;
-    height: 200px;
-    width: 600px;
-}
-
-.qualities2 {
-    margin: auto;
-    width: 500px;
-}
-
-#about-me  {
-  color: red;
-}
-
-#about-me h3 {
-  font-style: italic;
-  
-}
-
-#about-me h3 ~ div {
-    font-style: italic;
-  }
-
-#about-me > p {
-    font-size: 10px;
-}
-
-.profile-pic + p {
-    color: blueviolet;
-}
-
-#box:checked + label {
-    box-shadow: 0 0 0 3px green;
-}
-
-h3:hover {
-    color: green;
-}
-
-#socials {
-    background: rgb(0, 255, 106);
-    height: 300px;
-    width: 600px;
-}
-
-button:disabled {
-   box-shadow: 0 0 0 3px blue;
-}
-
-#twitter a:hover {
-    background-color:violet;
-}
-
-
-#insta a:active {
-    color:burlywood;
-}
-
-p::first-letter {
-    color: red;
- }
-
- p::first-line {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- }
-  
- a::after {
-    content: "";
- }
- a::before {
-    content: "";
- }
-
- p {
-    position: relative;
- }
- the above code is to do with positioning, and allows us to use the z-index property below, we will get to positioning a bit later on */  
- 
- /* p::after {
-    content: "";
-    background-color: palegoldenrod;
-    height: 20px;
-    width: 100%;
-    position: absolute;
-    left: 20px;
-    z-index: -1;
- }
-
- a[data-anchor="social"] {
-     background-color: brown; */
- /* } */
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -144,10 +6,14 @@ p::first-letter {
 }
 
 body {
-    font-family: 'Open Sans' , sans-serif;
+    font-family:  'Fredoka', sans-serif;
     background: white;
     color: #333;
     line-height: 1.5;
+}
+
+h1 {
+    font-size: 25px;
 }
 
 ul {
@@ -157,15 +23,13 @@ ul {
 a{
     color:white;
     text-decoration: none;
-    
 }
 a:hover {
     color: rgb(185, 212, 185);
-    ß
 }
 
 p {
-    margin; 10px 0;
+    margin: 10px 0;
 }
 
 img {
@@ -196,10 +60,9 @@ img {
 }
 
 .me {
-    /* background: url("/Users/lyndseycoombs/projects/portfolio/images/field.jpeg"); */
-    background-image: url('/Users/lyndseycoombs/projects/portfolio/images/field.jpeg') ;
+    background: url('/Users/lyndseycoombs/projects/portfolio/images/field.jpeg') no-repeat center center/cover ;
     color: rgb(243, 240, 240);
-    text-shadow: 0cm;
+    text-shadow: 2px 2px 4px #000000;
     height: 80vh;
     position:relative;
 }
@@ -211,4 +74,246 @@ img {
     justify-content: center;
     text-align: center;
     height: 100%;
+}
+
+.content h2 {
+    font-size: 30px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.flex-bio {
+    display: flex;
+}
+
+.flex-bioleft img {
+    border-radius: 50%;
+    width: 320px;
+    height: 370px;
+}
+
+.flex-bioright {
+    display: flex;
+    width: 50%;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-bioleft {
+    display: flex;
+    width: 50%;
+    padding: 0px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.flex-bioright p {
+    margin: 0;
+    padding: 0;
+    width: 75%;
+
+}
+.flex-bioright h3 {
+    font-size: 20px;
+}
+
+.learning {
+    text-align: center;
+    margin-top: 20px;
+  
+}
+
+
+.box {
+    background: rgb(185, 212, 185);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    border-style: dashed;
+    border-color: rgb(177, 180, 182); 
+}
+
+.box:hover {
+    background: rgb(140, 182, 140);
+}
+
+.boxes {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   text-align: center;
+   height: 100%;
+   margin-bottom: 40px;
+}
+
+  .box h3 {
+       font-size: 20px;
+       font-weight: 500;
+    
+  }
+
+   .row {
+    display: flex; 
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 10px;
+    height: 200px;
+    /* background: url(/Users/lyndseycoombs/projects/portfolio/images/dog.jpeg);   */
+  }
+
+  .flex-contact {
+      display: flex;
+  }
+
+  .flex-left {
+      display: flex;
+      width: 50%;
+      padding: 0px;
+      justify-content: center;
+  }
+
+  .flex-right {
+      display: flex ;
+      justify-content: center;
+      width: 50%;
+      padding: 10px;
+      background-color: bisque;
+  }
+
+  .contact-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  input[type=text] {
+    width: 70%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type=email] {
+    width: 70%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    /* align-items:flex-end; */
+    position: relative;
+    left: 35px;
+  }
+ 
+  label {
+    color: #B4886B;
+    font-weight: bold;
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  #contact {
+      color:#B4886B;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 25px;
+  }
+
+.form {
+    display: flex;
+    color: #B4886B;
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#notes {
+    width: 65%;
+    outline: none;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+ 
+ input:focus {
+     background-color: rgb(177, 180, 182);
+     outline: none;
+ }
+
+ #submit {
+    width: 50px;
+ }
+
+ .footer {
+     margin-right: 20px;
+ }
+
+ footer a {
+     margin-right: 20px;
+     font-size: 36px;
+ }
+ 
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #333;
+   color: white;
+   height: 70px;
+   width: 100%;
+}
+/* mobile or tablet */ 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px; 
+    }  
+    .navbar a {
+        padding: 10px 10px;
+    }
+
+    .flex-contact {
+        flex-direction: column;
+        align-items: center;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .flex-left {
+        width: 100%;
+    }
+
+    .flex-right {
+        width: 100%;
+    }
+   .flex-bio {
+       flex-direction: column;
+       align-items: center;
+       flex: 100%;
+       max-width: 100%;
+   }
+
+   .flex-bioleft {
+       margin-bottom: 20px;
+   }
+   .boxes {
+       display: flex;
+       flex-direction: column;
+       
+   }
+   .lessons {
+       margin-top: 20px;
+   }
 }
