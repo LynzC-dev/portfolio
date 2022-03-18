@@ -86,6 +86,7 @@ img {
 
 .flex-bio {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .flex-bioleft img {
@@ -121,11 +122,12 @@ img {
 }
 .flex-bioright h3 {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .learning {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
   
 }
 
@@ -135,8 +137,12 @@ img {
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
-    border-style: dashed;
-    border-color: rgb(177, 180, 182); 
+    border-width: 1px;
+    border-color: #333;
+    border-style: solid;
+  
+    
+    /* border-color: rgb(177, 180, 182);  */
 }
 
 .box:hover {
@@ -153,20 +159,20 @@ img {
 
   .box h3 {
        font-size: 20px;
-       font-weight: 500;
+       font-weight: bold;
     
   }
 
-   .row {
+   /* .row {
     display: flex; 
-  }
+  } */
   
-  .column {
+  /* .column {
     flex: 50%;
     padding: 10px;
     height: 200px;
-    /* background: url(/Users/lyndseycoombs/projects/portfolio/images/dog.jpeg);   */
-  }
+   
+  } */
 
   .flex-contact {
       display: flex;
@@ -185,6 +191,10 @@ img {
       width: 50%;
       padding: 10px;
       background-color: bisque;
+  }
+
+  #contact {
+      left: 30px;
   }
 
   .contact-form {
@@ -221,10 +231,12 @@ img {
   }
 
   #contact {
+      position: relative;
       color:#B4886B;
       font-weight: bold;
       margin-top: 20px;
       font-size: 25px;
+      left: 30px;
   }
 
 .form {
@@ -237,13 +249,24 @@ img {
     justify-content: center;
 
 }
-#notes {
+/* #notes {
     width: 65%;
     outline: none;
     border: none;
-    margin: 5px;
+    margin-top: 5px;
     padding: 5px;
     border-radius: 5px;
+    
+} */
+textarea {
+    width: 61%;
+    height: 100px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 4px;
 }
  
  input:focus {
@@ -274,7 +297,11 @@ footer {
    width: 100%;
 }
 /* mobile or tablet */ 
-@media (max-width: 768px) {
+
+@media (max-width: 768px)
+
+
+{
     .navbar {
         flex-direction: column;
         height: 120px;
@@ -301,13 +328,24 @@ footer {
    .flex-bio {
        flex-direction: column;
        align-items: center;
-       flex: 100%;
+       /* flex: 100%; */
        max-width: 100%;
+       margin-top: 10px;
+       margin-bottom: 20px;
+       
+   }
+
+   .flex-bioright {
+    text-align: justify;
+    width: 90%;
+    margin-top: 10px;
    }
 
    .flex-bioleft {
-       margin-bottom: 20px;
+       margin-bottom: 50px;
+       
    }
+
    .boxes {
        display: flex;
        flex-direction: column;
